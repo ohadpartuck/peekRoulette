@@ -1,0 +1,3 @@
+rootProject.name = 'peekRoulette'
+
+include ':app'

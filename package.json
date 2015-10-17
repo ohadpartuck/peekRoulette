@@ -2,6 +2,7 @@
   "name": "peekRoulette",
   "version": "0.0.1",
   "private": true,
+  "authors": ["gorenh1234@gmail.com", "roy.yair@gmail.", "ohadpartuck@gmail.com"],
   "scripts": {
     "start": "node_modules/react-native/packager/packager.sh"
   },

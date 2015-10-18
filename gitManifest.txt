@@ -1,0 +1,31 @@
+Basic Git Flow
+
+assumption - you are on master
+1. git checkout -b "my_cool_feature"
+2. code like a crazy monkey and commit using ` git commit -am "my cool feature notes" `
+    this step shouldn't take more then two three days
+    and dont include too many code changes here at once
+3. git checkout master
+4. git pull -r origin master (to get the most updated master code)
+5. git checkout my_cool_feature (to return to your branch)
+6. git rebase master
+7. if you have conflicts , resolve them together with the coder you conflicted with
+8. stop , relax and do ` git diff master `
+9. carefully review all your changes, make sure you know every one of them
+10. notify deploy in the DevTeam
+11. git checkout master
+12. git rebase my_cool_feature
+13. git push origin master
+14. Deploy via jenkins
+
+
+
+
+Resolving conflict using rebase
+1. identify your conflicts
+2. resolve them one by one, talk to the conflicts developer
+3. git add path_to/file/resolved
+4. git rebase --continue
+5. repeat until no conflict messages
+6. if it's too long, you can always git rebase --abort
+
